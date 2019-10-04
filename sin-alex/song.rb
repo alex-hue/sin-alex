@@ -47,6 +47,7 @@ get '/songs' do
 end
 
 get '/songs/new' do
+  protected!
   halt(401,'Not Authorized') unless session[:admin]
   @title = "Add NEW Song"
   @song = Song.new

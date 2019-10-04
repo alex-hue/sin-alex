@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
+require 'sinatra/auth'
 require 'slim'
 require 'sass'
 require 'sinatra/flash'
